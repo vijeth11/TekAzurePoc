@@ -1,0 +1,22 @@
+{
+  "name": "tek-azure-poc",
+  "version": "1.0.0",
+  "description": "Tek Azure POC Node Js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijeth11/TekAzurePoc.git"
+  },
+  "author": "vijeth belle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijeth11/TekAzurePoc/issues"
+  },
+  "homepage": "https://github.com/vijeth11/TekAzurePoc#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
