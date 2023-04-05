@@ -38,17 +38,16 @@ stages:
             artifact: drop
 
   - stage: deploy
-    displayName: Deploy stage
-    dependsOn: Build
-    condition: succeeded()
     jobs:
-      - job: Deploy
-        displayName: Deploy Job
-        environment: 'stagging'
-        pool:
-          vmImage: ubuntu-latest
-        strategy:
-          runOnce:
-            deploy:
-              steps:
-                - script: echo Hello world
+    - deployment: DeployWeb
+      displayName: deploy Web App
+      pool:
+        vmImage: 'Ubuntu-latest'
+      # creates an environment if it doesn't exist
+      environment: 'smarthotel-dev'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - script: echo Hello world
+          
